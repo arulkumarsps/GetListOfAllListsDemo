@@ -18,6 +18,8 @@ export interface IGetlistofalllistsWebPartProps {
 //This is a test trial
 
 //This is to add the test run
+
+//Quickchanges done
 export default class GetlistofalllistsWebPart extends BaseClientSideWebPart<IGetlistofalllistsWebPartProps> {
 
   public render(): void {  
