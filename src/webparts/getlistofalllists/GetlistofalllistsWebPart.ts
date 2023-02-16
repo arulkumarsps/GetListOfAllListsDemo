@@ -15,7 +15,9 @@ import { SPHttpClient } from '@microsoft/sp-http';
 export interface IGetlistofalllistsWebPartProps {
   description: string;
 }
+//This is a test trial
 
+//This is to add the test run
 export default class GetlistofalllistsWebPart extends BaseClientSideWebPart<IGetlistofalllistsWebPartProps> {
 
   public render(): void {  
@@ -37,7 +39,9 @@ export default class GetlistofalllistsWebPart extends BaseClientSideWebPart<IGet
       </div>`;
     });
   } 
+//Testing
 
+//this is to add the test run for second pull for qa
     private _getSharePointLists(): Promise<ISPList[]> {
       const url: string = this.context.pageContext.web.absoluteUrl + "/_api/web/lists";
       return this.context.spHttpClient.get(url, SPHttpClient.configurations.v1)
